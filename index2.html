@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.jsのサンプル</title>
+    <!--Vue.jsの本体を読み込む-->
+    <script src="https://unpkg.com/vue@3.5.0/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <h1>Vue3</h1>
+
+    <div id="app">{{message}}</div>
+    <script>
+      const appdata = {
+        data() {
+          return {
+            message: "Hello, Vue",
+          };
+        },
+      };
+
+      Vue.createApp(appdata).mount("#app");
+    </script>
+  </body>
+</html>
